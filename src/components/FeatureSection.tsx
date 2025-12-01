@@ -44,7 +44,7 @@ export default function FeaturesSection({ items = defaultItems }) {
         </h1>
 
         <p className="max-w-3xl text-[21.59px] font-light md:text-[20px] text-black mx-auto mt-4">
-          At Health Care Desk, we are committed to producing supplements that harness the power of all-natural superfoods. Our products help support the body's natural processes, improving our customers' quality of life.
+          {`At Health Care Desk, we are committed to producing supplements that harness the power of all-natural superfoods. Our products help support the body's natural processes, improving our customers' quality of life.`}
         </p>
       </header>
 

@@ -25,7 +25,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-[28.79px] font-medium mb-3">We're Social</h4>
+            <h4 className="text-[28.79px] font-medium mb-3"> { `We're Social` }</h4>
             <p className="text-[21.59px] text-black font-light">Like us, love us, follow us!</p>
           </div>
         </div>
@@ -35,8 +35,8 @@ export default function Footer() {
       <div className="bg-[#1968b9]">
         <div className="max-w-[1100px] mx-auto px-6 py-6 flex flex-col md:flex-row items-center gap-4">
           <div className="flex-1 text-white">
-            <h3 className="text-[34.31px] md:text-2xl font-semibold">Let's Grow Together</h3>
-            <p className="text-[17.58px] opacity-90 mt-1">We'll keep it simple. Only the news and updates you need.</p>
+            <h3 className="text-[34.31px] md:text-2xl font-semibold">Lets Grow Together</h3>
+            <p className="text-[17.58px] opacity-90 mt-1">Well keep it simple. Only the news and updates you need.</p>
           </div>
 
           <form className="flex gap-2 items-center w-full md:w-auto" onSubmit={(e) => e.preventDefault()}>
