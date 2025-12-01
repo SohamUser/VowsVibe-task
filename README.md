@@ -1,8 +1,8 @@
 🎨 VowsVibe Frontend Intern — Task Submission
 
-This repository contains my implementation of the Frontend Design Task assigned as part of the VowsVibe Frontend Intern selection process.
+This repository contains my implementation of the Frontend Design Task for the VowsVibe Frontend Intern selection process.
 
-The challenge was to convert a provided Figma design into a fully responsive, pixel-accurate webpage using Next.js and Tailwind CSS, with attention to typography, layout structure, spacing, responsiveness, and component reusability.
+The task involved converting a provided Figma design into a fully responsive, pixel-accurate webpage using Next.js and Tailwind CSS, ensuring attention to typography, spacing, layout structure, and component reusability.
 
 🚀 Live Demo
 
@@ -28,16 +28,17 @@ yarn install
 # or
 pnpm install
 
-
 Run the development server:
 
 npm run dev
 
+Then open http://localhost:3000
+ in your browser.
 
 📦 Deployment
 
-This project is deployed on Vercel, the recommended platform for Next.js.
+This project is deployed on Vercel, the recommended hosting platform for Next.js.
 
-Deploy your own version with:
+Deploy your own version:
 
 👉 https://vercel.com/new
