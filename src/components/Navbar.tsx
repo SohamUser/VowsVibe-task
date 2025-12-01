@@ -1,4 +1,5 @@
 import Image from "next/image";
+import {Menu} from "lucide-react"
 
 const Navbar = () => {
   return (
@@ -42,7 +43,7 @@ const Navbar = () => {
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <button aria-label="Menu">
-            <Image src="/menu.svg" alt="menu" width={26} height={26} />
+            <Menu width={26} height={26} />
           </button>
         </div>
 
