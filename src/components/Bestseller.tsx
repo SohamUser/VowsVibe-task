@@ -1,6 +1,3 @@
-// components/BestSellers.jsx
-import React from "react";
-
 const products = [
   { id: 1, title: "Dent Pure", img: "/dent-pure.png" },
   { id: 2, title: "True Fem", img: "/true-fem.png" },
@@ -34,7 +31,7 @@ export default function BestSellers() {
         </div>
       </header>
 
-      {/* Products grid wrapper */}
+      
       <div className="w-[1286px] h-[310.71px] overflow-x-auto">
         <div
           className="grid"
@@ -52,7 +49,7 @@ export default function BestSellers() {
                 height: "310.70px",
               }}
             >
-              {/* Image container */}
+              
               <div className="bg-[#f5f7fb] rounded-lg flex items-center justify-center h-[140px]">
                 <img
                   src={p.img}
@@ -61,12 +58,12 @@ export default function BestSellers() {
                 />
               </div>
 
-              {/* Title */}
+           
               <h3 className="mt-[22.28px] text-[16px] font-semibold text-slate-900">
                 {p.title}
               </h3>
 
-              {/* Stars */}
+             
               <div className="mt-2 flex items-center gap-1">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <svg
@@ -82,7 +79,7 @@ export default function BestSellers() {
                 ))}
               </div>
 
-              {/* Shop Now button */}
+             
               <button
                 className="mt-[22.28px] w-full text-[14px] font-medium rounded border border-black py-2 hover:bg-slate-50 transition"
               >

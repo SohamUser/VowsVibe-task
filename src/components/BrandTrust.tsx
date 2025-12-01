@@ -1,8 +1,6 @@
-// components/BrandTrust.jsx
 "use client";
-
 import Image from "next/image";
-import React from "react";
+
 
 export default function BrandTrust({
   items = [
@@ -15,7 +13,7 @@ export default function BrandTrust({
 }) {
   return (
     <section className="w-full flex justify-center py-12">
-      {/* Figma-sized box */}
+      
       <div
         className="relative rounded-xl overflow-hidden flex flex-col items-center justify-center text-center"
         style={{
@@ -23,7 +21,7 @@ export default function BrandTrust({
           height: "414px",
         }}
       >
-        {/* Background image contained inside the box */}
+        
         <Image
           src="/back.jpg"
           alt="Brand trust background"
@@ -32,7 +30,7 @@ export default function BrandTrust({
           priority
         />
 
-        {/* Foreground Content */}
+        
         <div className="relative z-10 w-full px-10 py-10">
           <h2 className="text-[35.99px] font-bold text-black">
             A Brand That You Can Trust
@@ -42,7 +40,7 @@ export default function BrandTrust({
             Our results-driven supplements are made with premium & safe ingredients
           </p>
 
-          {/* Icons Row */}
+          
           <ul className="mt-10 flex items-center justify-center gap-16">
             {items.map((it) => (
               <li key={it.key} className="flex flex-col items-center">

@@ -1,8 +1,6 @@
-// components/Testimonials.jsx
 "use client";
 
 import Image from "next/image";
-import React from "react";
 
 const testimonials = [
   {
@@ -42,11 +40,9 @@ export default function Testimonials() {
           {testimonials.map((t) => (
             <article
               key={t.id}
-              /* NOTE: overflow-visible so the overlapping image isn't clipped */
               className="relative bg-[#E9F7FA] rounded-lg overflow-visible p-6 pt-14 min-h-80 flex flex-col justify-between"
               aria-labelledby={`testi-${t.id}-title`}
             >
-              {/* overlapping product image - now z-20 and higher negative top */}
               <div className="absolute -top-8 left-6 w-[72px] h-[72px] rounded-full bg-transparent z-20 pointer-events-none">
                 <Image
                   src={t.productImg}
@@ -57,7 +53,6 @@ export default function Testimonials() {
                 />
               </div>
 
-              {/* subtle horizontal band across middle (sit behind image) */}
               <div className="absolute left-0 right-0 top-1/2 h-12 bg-white/30 pointer-events-none z-0" />
 
               <div className="relative z-10">
@@ -65,7 +60,6 @@ export default function Testimonials() {
                   {t.title}
                 </h3>
 
-                {/* stars */}
                 <div className="flex items-center gap-1 mt-3 pl-2">
                   {Array.from({ length: 5 }).map((_, i) => (
                     <svg key={i} width="14" height="14" viewBox="0 0 24 24" fill="#FFB020" xmlns="http://www.w3.org/2000/svg" aria-hidden>
@@ -74,19 +68,16 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                {/* review text */}
                 <p className="mt-4 text-[21.59px] font-light text-balck leading-relaxed">
                   {t.text}
                 </p>
               </div>
 
-              {/* author line */}
               <div className="mt-4 font-normal text-[21.59px] text-left text-black z-10">- {t.author}</div>
             </article>
           ))}
         </div>
 
-        {/* brand logo + CTA */}
         <div className="mt-12 flex flex-col items-center">
           <div className="mb-6">
             <Image src="/healthcare5.png" alt="Health Desk logo" width={238.38} height={113} className="object-contain" />

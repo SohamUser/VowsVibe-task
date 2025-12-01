@@ -4,18 +4,18 @@ const Navbar = () => {
   return (
     <header className="w-full h-[84px] bg-white">
       <nav className="h-full max-w-[1440px] mx-auto px-6 flex items-center justify-between">
-        
+
         {/* Logo */}
         <div className="flex items-center">
-            <Image
+          <Image
             src="/Health-care7.png"
             alt="Logo"
             width={100}
             height={78}
             priority
             className="object-contain pt-4"
-        />
-    </div>
+          />
+        </div>
 
 
         {/* Nav links */}
@@ -27,7 +27,7 @@ const Navbar = () => {
           <li><a href="#" className="hover:text-gray-500 text-[19.19px] text-black">Blog</a></li>
           <li><a href="#" className="hover:text-gray-500 text-[19.19px] text-black">Contact Us</a></li>
 
-          {/* Bag Icon */}
+
           <li>
             <Image
               src="/bag.png"

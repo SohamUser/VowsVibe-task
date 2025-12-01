@@ -1,13 +1,10 @@
-// components/Plans.jsx
-import React from "react";
-
 const plans = [
   {
     id: 1,
     title: "Weight Loss",
     description:
       "Shop trusted weight loss products that help boost metabolism and support your journey to a healthier you",
-    icon: "/weight-loss.png", // put your downloaded svg/png here, e.g. /public/icons/nerve-pain.svg
+    icon: "/weight-loss.png",
   },
   {
     id: 2,
@@ -54,7 +51,7 @@ export default function Plans() {
         </h2>
       </div>
 
-      {/* Cards row */}
+
       <div
         className="w-full max-w-[2081.501px] h-[266.67px] flex flex-row gap-8 items-center justify-start overflow-x-auto px-12"
         aria-label="Plans list"
@@ -68,32 +65,32 @@ export default function Plans() {
               boxShadow: "0 10px 30px rgba(16,24,40,0.06)",
             }}
           >
-            {/* Icon (circular), Title, Description */}
-            <div className="flex flex-col items-start gap-3 flex-grow">
-    <div
-      className="w-[62.2px] h-[62.2px] rounded-full flex bg-[#d2cfd7] items-center justify-center"
-      aria-hidden="true"
-    >
-      <img
-        src={p.icon}
-        alt={`${p.title} logo`}
-        className="w-6 h-6 object-contain"
-      />
-    </div>
 
-    <div>
-      <h3 className="text-[18.66px] font-medium text-black">{p.title}</h3>
-      <p className="text-[10.88px] text-slate-600 mt-1 font-normal leading-snug">
-        {p.description}
-      </p>
-    </div>
-  </div>
+            <div className="flex flex-col items-start gap-3 grow">
+              <div
+                className="w-[62.2px] h-[62.2px] rounded-full flex bg-[#d2cfd7] items-center justify-center"
+                aria-hidden="true"
+              >
+                <img
+                  src={p.icon}
+                  alt={`${p.title} logo`}
+                  className="w-6 h-6 object-contain"
+                />
+              </div>
+
+              <div>
+                <h3 className="text-[18.66px] font-medium text-black">{p.title}</h3>
+                <p className="text-[10.88px] text-slate-600 mt-1 font-normal leading-snug">
+                  {p.description}
+                </p>
+              </div>
+            </div>
 
 
-            {/* Buy button - full width pill */}
+
             <button
-            className="w-full py-3 rounded-full text-white text-[13.99px] font-semibold shadow-md mt-3"
-            style={{
+              className="w-full py-3 rounded-full text-white text-[13.99px] font-semibold shadow-md mt-3"
+              style={{
                 background: "linear-gradient(90deg,#3A8EF6,#6F3AFA)",
               }}
               aria-label={`Buy ${p.title} plan`}

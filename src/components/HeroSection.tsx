@@ -5,11 +5,11 @@ const HeroSection = () => {
     <section
       aria-label="Hero - healthcare"
       className="mt-8 ml-[72px] mr-[60px]"
-      style={{ backgroundColor: "rgba(3,9,50,0.04)" }} // subtle bg (replace with exact value from Figma)
+      style={{ backgroundColor: "rgba(3,9,50,0.04)" }}
     >
       <div className="max-w-7xl mx-auto px-6 py-20 lg:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-          {/* Left column */}
+          
           <div className="order-2 md:order-1">
             <h1 className="text-[50.38px] sm:text-4xl lg:text-5xl font-bold leading-tight text-black">
             Health Desk Clinic: <br />All Natural Supplements
@@ -31,7 +31,7 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right column - image */}
+          
           <div className="order-1 md:order-2 flex justify-center md:justify-end">
             <div className="relative w-full max-w-md md:max-w-lg aspect-4/5">
               <Image

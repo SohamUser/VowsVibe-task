@@ -1,4 +1,3 @@
-// components/Footer.jsx
 "use client";
 
 import Image from "next/image";
@@ -32,7 +31,7 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Newsletter band */}
+
       <div className="bg-[#1968b9]">
         <div className="max-w-[1100px] mx-auto px-6 py-6 flex flex-col md:flex-row items-center gap-4">
           <div className="flex-1 text-white">
@@ -40,7 +39,7 @@ export default function Footer() {
             <p className="text-[17.58px] opacity-90 mt-1">We'll keep it simple. Only the news and updates you need.</p>
           </div>
 
-          <form className="flex gap-2 items-center w-full md:w-auto" onSubmit={(e)=>e.preventDefault()}>
+          <form className="flex gap-2 items-center w-full md:w-auto" onSubmit={(e) => e.preventDefault()}>
             <label htmlFor="footer-email" className="sr-only">Email</label>
             <input id="footer-email" type="email" placeholder="Please Enter Your Email" className="px-4 py-2 rounded-sm border border-white text-white md:w-[420px] focus:outline-none" />
             <button type="submit" className="px-4 py-2 bg-white text-[#0b5aa7] font-medium rounded-sm">Submit</button>
@@ -48,28 +47,27 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Lower footer main area */}
+
       <div className="bg-white border-t border-slate-200">
         <div className="max-w-[1100px] mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-[220px_1fr] gap-6">
-          {/* Left address/logo */}
+
           <div className="flex flex-col gap-4">
             <div className="w-[120px]">
               <Image src="/healthcare5.png" alt="Health Desk" width={206} height={63} className="object-contain" />
             </div>
 
             <address className="not-italic text-[17px] text-[#5C5C5C]">
-              Address: 7823 Red Oak Trail, Austin, TX, 78745, United States<br/>
-              Phone: (512) 555-2376<br/>
+              Address: 7823 Red Oak Trail, Austin, TX, 78745, United States<br />
+              Phone: (512) 555-2376<br />
               Email: Ereforce@outlook.com
             </address>
           </div>
 
-          {/* Divider + product lists */}
+
           <div className="border-l-[1.2px] border-[#000000] pl-6">
             <h4 className="text-[19.9px] font-semibold text-[#1A69BE] mb-4">Our Products</h4>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm text-slate-700">
-              {/* Repeat product lists — replace with dynamic data as needed */}
               <ul className="space-y-1">
                 <li className=" text-[16.79px] text-[#5C5C5C]">Vita Renew</li>
                 <li className=" text-[16.79px] text-[#5C5C5C]">Testobites</li>
@@ -106,47 +104,41 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Disclaimer + payments + bottom bar */}
       <div className="bg-[#f1f1f1]">
-  <div className="max-w-[1100px] mx-auto px-6 py-8 text-sm text-slate-600 flex flex-col items-center">
+        <div className="max-w-[1100px] mx-auto px-6 py-8 text-sm text-slate-600 flex flex-col items-center">
 
-    {/* Disclaimer - centered */}
-    <p className="max-w-3xl text-center text-[15.5px] text-[#5C5C5C] leading-relaxed">
-      These statements have not been evaluated by the Food and Drug Administration.
-      These products are not intended to diagnose, treat, cure or prevent any disease.
-      Individual results may vary.
-    </p>
+          <p className="max-w-3xl text-center text-[15.5px] text-[#5C5C5C] leading-relaxed">
+            These statements have not been evaluated by the Food and Drug Administration.
+            These products are not intended to diagnose, treat, cure or prevent any disease.
+            Individual results may vary.
+          </p>
 
-    {/* Payment image below */}
-    <div className="mt-4">
-      <Image
-        src="/cards.png"
-        alt="Accepted payment methods"
-        width={255}
-        height={36}
-        className="object-contain mx-auto"
-      />
-    </div>
-  </div>
+          <div className="mt-4">
+            <Image
+              src="/cards.png"
+              alt="Accepted payment methods"
+              width={255}
+              height={36}
+              className="object-contain mx-auto"
+            />
+          </div>
+        </div>
 
-  {/* Bottom bar: left copyright, right links */}
-  <div className="">
-    <div className="max-w-[1100px] mx-auto px-6 py-4 flex items-center justify-between text-sm text-slate-600">
+        <div className="">
+          <div className="max-w-[1100px] mx-auto px-6 py-4 flex items-center justify-between text-sm text-slate-600">
 
-      {/* Left */}
-      <div className="text-[15.5px] text-[#434343]">
-        © 2025, Health Desk Clinic. All Rights Reserved.
+            <div className="text-[15.5px] text-[#434343]">
+              © 2025, Health Desk Clinic. All Rights Reserved.
+            </div>
+
+            <div className="flex items-center gap-6">
+              <a href="/terms" className="hover:underline text-[15.88px] text-[#434343]">Terms And Conditions</a>
+              <a href="/privacy" className="hover:underline text-[15.88px] text-[#434343]">Privacy Policy</a>
+              <a href="/contact" className="hover:underline text-[15.88px] text-[#434343]">Contact Us</a>
+            </div>
+          </div>
+        </div>
       </div>
-
-      {/* Right links */}
-      <div className="flex items-center gap-6">
-        <a href="/terms" className="hover:underline text-[15.88px] text-[#434343]">Terms And Conditions</a>
-        <a href="/privacy" className="hover:underline text-[15.88px] text-[#434343]">Privacy Policy</a>
-        <a href="/contact" className="hover:underline text-[15.88px] text-[#434343]">Contact Us</a>
-      </div>
-    </div>
-  </div>
-</div>
 
     </footer>
   );

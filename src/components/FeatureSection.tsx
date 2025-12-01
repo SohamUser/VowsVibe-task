@@ -1,4 +1,3 @@
-// components/FeaturesSection.jsx
 "use client";
 
 import Image from "next/image";
@@ -35,7 +34,6 @@ const defaultItems = [
 
 export default function FeaturesSection({ items = defaultItems }) {
   return (
-    // bigger design width and less horizontal padding to reduce side-gaps
     <section className="w-full max-w-[1294px] mx-auto px-4 md:px-6 py-14">
       {/* Page heading */}
       <header className="text-center mb-12 px-2">
@@ -50,7 +48,6 @@ export default function FeaturesSection({ items = defaultItems }) {
         </p>
       </header>
 
-      {/* Feature rows - alternate image/text */}
       <div className="flex flex-col gap-12">
         {items.map((it, idx) => {
           const isEven = idx % 2 === 1;
@@ -60,16 +57,14 @@ export default function FeaturesSection({ items = defaultItems }) {
               className="grid grid-cols-1 md:grid-cols-12 items-center gap-6 md:gap-10"
               aria-labelledby={`feature-${it.id}-title`}
             >
-              {/* Image column: span 5 / align to edge depending on order */}
               <div
                 className={`md:col-span-5 ${isEven ? "md:order-2 md:justify-end" : "md:order-1 md:justify-start"} flex`}
               >
-                {/* make image take full column width (no small max-width) */}
                 <div className="w-full rounded-lg overflow-hidden shadow-md">
                   <Image
                     src={it.img}
                     alt={it.imgAlt || it.title}
-                    width={920} // large source size — will be responsive via layout
+                    width={920} 
                     height={600}
                     className="object-cover w-full h-[220px] md:h-[260px] lg:h-[300px]"
                     priority={idx === 0}
@@ -77,7 +72,6 @@ export default function FeaturesSection({ items = defaultItems }) {
                 </div>
               </div>
 
-              {/* Text column: span 7 */}
               <div className={`md:col-span-7 ${isEven ? "md:order-1 text-left" : "md:order-2 text-left"}`}>
                 <h3 id={`feature-${it.id}-title`} className="text-[33.59px] md:text-[32px] lg:text-[34px] font-bold text-black">
                   {it.title}

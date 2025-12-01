@@ -1,7 +1,5 @@
-// components/CharitySection.jsx
 "use client";
 import Image from "next/image";
-import React from "react";
 
 export default function CharitySection({
   bg = "/back2.jpg",
@@ -22,7 +20,7 @@ export default function CharitySection({
         height: "516px",
       }}
     >
-      {/* FULL-WIDTH background */}
+
       <Image
         src={bg}
         alt="Charity background"
@@ -31,7 +29,7 @@ export default function CharitySection({
         priority
       />
 
-      {/* Blue tint overlay */}
+
       <div
         className="absolute inset-0"
         style={{
@@ -39,7 +37,7 @@ export default function CharitySection({
         }}
       />
 
-      {/* Content centered inside */}
+
       <div className="relative z-10 w-full max-w-[1300px] mx-auto px-6 text-center text-white">
         <h2
           className="font-bold whitespace-pre-line"
@@ -59,29 +57,29 @@ export default function CharitySection({
           {subtitle}
         </p>
 
-        {/* Logos row */}
+        {/* Logos */}
         <div className="mt-10 w-full flex justify-center">
-  <ul
-    className="w-full max-w-[1300px] flex justify-between items-center px-10"
-    style={{
-      listStyle: "none",
-      padding: 0,
-      margin: 0,
-    }}
-  >
-    {logos.map((src, i) => (
-      <li key={i} className="flex items-center justify-center">
-        <Image
-          src={src}
-          alt={`partner logo ${i + 1}`}
-          width={215.93}
-          height={87.57}
-          className="object-contain"
-        />
-      </li>
-    ))}
-  </ul>
-</div>
+          <ul
+            className="w-full max-w-[1300px] flex justify-between items-center px-10"
+            style={{
+              listStyle: "none",
+              padding: 0,
+              margin: 0,
+            }}
+          >
+            {logos.map((src, i) => (
+              <li key={i} className="flex items-center justify-center">
+                <Image
+                  src={src}
+                  alt={`partner logo ${i + 1}`}
+                  width={215.93}
+                  height={87.57}
+                  className="object-contain"
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
 
       </div>
     </section>
