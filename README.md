@@ -21,17 +21,17 @@ Deployed on Vercel
 🛠️ Getting Started
 
 Clone the project and install dependencies:
-
+```bash
 npm install
 # or
 yarn install
 # or
 pnpm install
-
+```
 Run the development server:
-
+```bash
 npm run dev
-
+```
 Then open http://localhost:3000
  in your browser.
 
